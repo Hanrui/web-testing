@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <head>
-<meta content="origin" name="referrer">
+	<meta content="origin" name="referrer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-TEXT OUTSIDE OF IFRAME <br>
-<a href="destination.html">destination page</a> <br>
-<iframe src="iframe_page.html"></iframe>
+	<div>
+		This page is homepage.html<br>
+		It has referrer policy set to 'origin'.<br>
+	</div>
+	<div>
+		<b>UA: </b><br>
+		<span id="ua_output"></span>
+	</div>
+	<a href="destination.html">destination page</a> <br>
+	<iframe src="iframe_page.html"></iframe>
+	<script type="text/javascript">
+		document.getElementById('ua_output').innerText = navigator.userAgent;
+	</script>
 </body>
