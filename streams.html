@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+	<style>
+		#result_out {
+			height: 200px;
+			color: black;
+		}
+	</style>
+</head>
+<html>
+	<body>
+		<div id="result_out"></div>
+		<script>
+			document.getElementById('result_out').innerHTML = 'ReadableStream: ' + (window.ReadableStream ? 'Yes' : 'No') + '<br>'
+				+ 'WritableStream: ' + (window.WritableStream ? 'Yes' : 'No')
+		</script>
+	</body>
+</html>
